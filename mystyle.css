@@ -1,0 +1,112 @@
+.main{
+    font-size:150%;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* it center the item vertically */
+    justify-content: center;
+    /* it center the item horizontally */
+}
+
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+  
+
+/* https://codepen.io/neutraltone/pen/pqmxjb */
+
+.box {
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+    border-left: 0 solid #00ff99;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+  }
+  
+  .box:hover {
+    padding-left: 1rem;
+    border-left: 0 solid #00ff99;
+  }
+  
+  .box > :first-child {
+    margin-top: 0;
+  }
+  
+  .box > :last-child {
+    margin-bottom: 0;
+  }
+  
+  .heading {
+    color: #fff;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: #0099ff;
+  }
+
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #04AA6D;
+    outline: none;
+  }
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
