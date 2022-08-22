@@ -1,3 +1,5 @@
+/* I have no idea what I'm doing */
+
 .main{
     font-size:150%;
 }
@@ -6,10 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* it center the item vertically */
     justify-content: center;
-    /* it center the item horizontally */
 }
+
+/* Free Templates power 💪💪💪 */
 
 /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
 

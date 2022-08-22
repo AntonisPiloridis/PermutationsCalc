@@ -1,31 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <!-- PYSCRIPT (no pyscript load) 
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <!-- PYSCRIPT (pyscript off) 
+        <script defer src="./pyscript/pyscript.js"></script>
         <py-env> 
         - paths:
             - ./functions.py
         </py-env>
         -->
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+        <!-- Javascript-->
+        <script src="script.js" defer></script>
+
+        <!-- CSS-->
+        <link rel="stylesheet" href="./pyscript/pyscript.css" />
         <link rel="stylesheet" href="mystyle.css">
+        
         <title>About</title>
         
     </head>
 
     <body>
         <div class="main">
-
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="https://github.com/AntonisPiloridis">GitHub</a></li>
+                <li><a href="https://github.com/AntonisPiloridis/PermutationsCalc">GitHub</a></li>
                 <li><a href="https://pyscript.net/">PyScript</a></li>
                 <li><a class="active"href="/about.html">About</a></li>
             </ul>
             <br><br>
             <div class="box">
                 <h1 class="centre"><strong>About</strong></h1>
+                <p>PermutationsCalc is a static github page that uses <a href="https://pyscript.net/" style="color:#04AA6D">pyscript</a> to display all the possible permutations with repetition. This page was created to test the pyscript and to runtime a python library (<a href="https://github.com/AntonisPiloridis/pcomp" style="color:#04AA6D">pcomp</a>) on the web.</p>
                 
+            </div>
+            <br><br>
+            <div class="box">
+                <h1 class="centre"><strong>FAQ</strong></h1>
             </div>
         </div>
     </body>

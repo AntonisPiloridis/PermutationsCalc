@@ -1,14 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
         <!-- PYSCRIPT -->
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <script defer src="./pyscript/pyscript.js"></script>
         <py-env> 
         - paths:
             - ./functions.py
         </py-env>
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+        <!-- JavaScript-->
+        <script src="script.js" defer></script>
+
+        <!-- CSS-->
+        <link rel="stylesheet" href="./pyscript/pyscript.css" />
         <link rel="stylesheet" href="mystyle.css">
+
         <title>Home</title>
         
     </head>
@@ -17,8 +24,8 @@
         <div class="main">
 
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="https://github.com/AntonisPiloridis">GitHub</a></li>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="https://github.com/AntonisPiloridis/PermutationsCalc">GitHub</a></li>
                 <li><a href="https://pyscript.net/">PyScript</a></li>
                 <li><a href="/about.html">About</a></li>
               </ul>
@@ -26,7 +33,7 @@
             <br><br>
               
             <div class="box">
-                <h1 class="centre"><strong>All Possible Combinations</strong></h1>
+                <h1 class="centre"><strong>All possible permutations</strong> <div style="color:gray">with repetition</div></h1>
                 <br>
                     
                 Input-A: <input type="text" placeholder="Iterable" id="Iterable" value="">
@@ -35,6 +42,7 @@
                 <br><br>
                 <input type="button" id="clacB" value="Calculate" class="button" >
                 <br><br>
+                <p><details><summary>Syntax</summary>Input-A: Split using , <br> Input-B: Must be a number>0</details></p>
                 <p><details><summary>Example</summary>Input-A: 0,1 <br> Input-B: 4<br>Output: [['0', '0', '0', '0']....] </details></p>
             </div>
             <br><br>
@@ -42,6 +50,10 @@
                 <h1 class="centre"><strong>Result Screen</strong></h1>
                 <br>
                 <p id="result"></p>
+                <div id="on_runtime" style="display: none;">
+                    <br><br>
+                    <input type="button" id="expB" value="Export" class="button">
+                </div>
             </div>
             <br><br>
         </div>
